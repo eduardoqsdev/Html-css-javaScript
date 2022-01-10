@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>links</title>
     <style>
+        /*
+        --SELETORES PERSONALIZADOS--
+                # = id
+                . = class
+                : = pseudo-class
+                :: = pseudo-element
+                > =  clildren
+        */
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -23,6 +31,10 @@
         }
         a:active{
             color: yellow;
+        }
+        .especial{
+            background-color: rgb(219, 120, 120);
+            color: white;
         }
         .especial::before{
             content: '→ ';
