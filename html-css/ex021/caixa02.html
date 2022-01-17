@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+            border-radius: 10px;
+            text-align: justify;
+        }
+        article > aside{
+            background-color: rgb(161, 161, 161);
+            border-radius: 2px;
+            text-align: right;
+            margin-right: 6px;
+        }
+        nav{
+            background-color: rgb(163, 160, 160);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.493);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.486);
+        }
+        footer{
+            background-color: white;
+            text-align: center;
+            padding: 4px;
+            margin-inline:10px;
+            border-radius: 5px;
+            box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.486);
+        }
+        footer > p {
+            margin: 0px;
+        }
+        header{
+            border-radius: 10px;
+            box-shadow: 4px 4px 7px 0px rgba(0, 0, 0, 0.486);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            Esportes Política Tecnologia
+        </section>
+        <section id="noticias">
+            <h2>Notícia</h2>
+            <article>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolores quam sunt architecto tempora assumenda non recusandae impedit in praesentium quod ipsa error a delectus nemo vel veritatis, asperiores sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eligendi, nam voluptas dolorum repellat delectus amet vitae aspernatur, voluptate neque iusto? Eveniet mollitia quas et voluptates magnam dolorem laboriosam enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iste nam dignissimos distinctio placeat porro, sunt quasi, sit temporibus libero laboriosam officia adipisci dicta beatae, consectetur similique corporis error. Natus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex architecto sequi doloribus consequuntur aut, voluptas illo ullam repellat dolores sunt deleniti officia beatae culpa provident recusandae molestiae, ipsum, ipsam itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veniam, officia eligendi quia quaerat ratione fuga nam esse, placeat id nobis soluta a inventore sed explicabo officiis nemo exercitationem voluptate! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam animi quibusdam voluptatibus quia amet officia quo doloremque eius, voluptatum voluptates. Iure sed dolores modi cum omnis libero dolor hic assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae itaque optio officia iste odio tenetur aut temporibus nulla. Eligendi veritatis deleniti dolorum possimus perspiciatis voluptas cum cupiditate, reiciendis quibusdam nam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam obcaecati temporibus officia aperiam aliquid facilis expedita totam, amet libero tempore minus iste repudiandae quidem! Saepe eum minus porro corrupti illo?
+                <aside>
+                    Artigo escrito por Fulano de tal.
+                </aside>
+            </article>
+          
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Eduardo Q</p>
+    </footer>
+</body>
+
+</html>
