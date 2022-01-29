@@ -12,6 +12,20 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*pra grudar o cabeçalho*/
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10PX;
+            background-color: lightgray;
+        }
+       
+        tbody > tr:nth-child(odd){ /* 2n-1*/
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){ /* 2n*/
+            background-color: lightgray;
         }
         td, th{
             border: 1px solid black;
@@ -21,6 +35,14 @@
             background-color: gray;
             color: white;
         }
+        thead > tr > th{ 
+            position: sticky;/*pra grudar o cabeçalho*/
+            top: -1px;
+            background-color: gray;
+        } 
+        td.num{
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +51,7 @@
         ANATOMIA PARA TABELAS GRANDES
 
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -37,32 +60,56 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>Populacão das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populacão</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 6em;">Populacão</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45 919 049</td>
+                <td class="num">45 919 049</td>
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>21 411 923</td>
+                <td class="num">21 411 923</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17 463 349</td>
+                <td class="num">17 463 349</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 985 284</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 597 484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 466 630</td>
+            </tr>    
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>0000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>122 843 719</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur culpa saepe obcaecati tempore distinctio, minima sunt laboriosam quam voluptatibus voluptatum. Nostrum nesciunt porro eum distinctio neque ex ipsum totam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate ab ea saepe ratione pariatur corporis distinctio! Doloremque laboriosam sit vero autem consectetur deserunt dolorem eligendi in voluptate. Tempora, dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reiciendis suscipit quibusdam quo quisquam vitae? Earum quia voluptatum, quis animi quae ut praesentium accusantium perferendis voluptatem iure facere cupiditate. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt cumque nobis ipsum ad esse! Voluptates in nostrum illo, architecto sapiente culpa? Tempore aperiam amet quibusdam dolor iste quo distinctio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, molestiae nemo dolorum nulla consequatur ad eius at, nihil in reiciendis eum dicta eligendi atque? Vel commodi nesciunt accusantium quas laudantium?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur culpa saepe obcaecati tempore distinctio, minima sunt laboriosam quam voluptatibus voluptatum. Nostrum nesciunt porro eum distinctio neque ex ipsum totam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate ab ea saepe ratione pariatur corporis distinctio! Doloremque laboriosam sit vero autem consectetur deserunt dolorem eligendi in voluptate. Tempora, dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reiciendis suscipit quibusdam quo quisquam vitae? Earum quia voluptatum, quis animi quae ut praesentium accusantium perferendis voluptatem iure facere cupiditate. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt cumque nobis ipsum ad esse! Voluptates in nostrum illo, architecto sapiente culpa? Tempore aperiam amet quibusdam dolor iste quo distinctio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, molestiae nemo dolorum nulla consequatur ad eius at, nihil in reiciendis eum dicta eligendi atque? Vel commodi nesciunt accusantium quas laudantium?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur culpa saepe obcaecati tempore distinctio, minima sunt laboriosam quam voluptatibus voluptatum. Nostrum nesciunt porro eum distinctio neque ex ipsum totam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate ab ea saepe ratione pariatur corporis distinctio! Doloremque laboriosam sit vero autem consectetur deserunt dolorem eligendi in voluptate. Tempora, dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reiciendis suscipit quibusdam quo quisquam vitae? Earum quia voluptatum, quis animi quae ut praesentium accusantium perferendis voluptatem iure facere cupiditate. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt cumque nobis ipsum ad esse! Voluptates in nostrum illo, architecto sapiente culpa? Tempore aperiam amet quibusdam dolor iste quo distinctio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, molestiae nemo dolorum nulla consequatur ad eius at, nihil in reiciendis eum dicta eligendi atque? Vel commodi nesciunt accusantium quas laudantium?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur culpa saepe obcaecati tempore distinctio, minima sunt laboriosam quam voluptatibus voluptatum. Nostrum nesciunt porro eum distinctio neque ex ipsum totam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate ab ea saepe ratione pariatur corporis distinctio! Doloremque laboriosam sit vero autem consectetur deserunt dolorem eligendi in voluptate. Tempora, dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reiciendis suscipit quibusdam quo quisquam vitae? Earum quia voluptatum, quis animi quae ut praesentium accusantium perferendis voluptatem iure facere cupiditate. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt cumque nobis ipsum ad esse! Voluptates in nostrum illo, architecto sapiente culpa? Tempore aperiam amet quibusdam dolor iste quo distinctio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, molestiae nemo dolorum nulla consequatur ad eius at, nihil in reiciendis eum dicta eligendi atque? Vel commodi nesciunt accusantium quas laudantium?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur culpa saepe obcaecati tempore distinctio, minima sunt laboriosam quam voluptatibus voluptatum. Nostrum nesciunt porro eum distinctio neque ex ipsum totam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate ab ea saepe ratione pariatur corporis distinctio! Doloremque laboriosam sit vero autem consectetur deserunt dolorem eligendi in voluptate. Tempora, dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reiciendis suscipit quibusdam quo quisquam vitae? Earum quia voluptatum, quis animi quae ut praesentium accusantium perferendis voluptatem iure facere cupiditate. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt cumque nobis ipsum ad esse! Voluptates in nostrum illo, architecto sapiente culpa? Tempore aperiam amet quibusdam dolor iste quo distinctio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, molestiae nemo dolorum nulla consequatur ad eius at, nihil in reiciendis eum dicta eligendi atque? Vel commodi nesciunt accusantium quas laudantium?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur culpa saepe obcaecati tempore distinctio, minima sunt laboriosam quam voluptatibus voluptatum. Nostrum nesciunt porro eum distinctio neque ex ipsum totam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate ab ea saepe ratione pariatur corporis distinctio! Doloremque laboriosam sit vero autem consectetur deserunt dolorem eligendi in voluptate. Tempora, dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reiciendis suscipit quibusdam quo quisquam vitae? Earum quia voluptatum, quis animi quae ut praesentium accusantium perferendis voluptatem iure facere cupiditate. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt cumque nobis ipsum ad esse! Voluptates in nostrum illo, architecto sapiente culpa? Tempore aperiam amet quibusdam dolor iste quo distinctio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, molestiae nemo dolorum nulla consequatur ad eius at, nihil in reiciendis eum dicta eligendi atque? Vel commodi nesciunt accusantium quas laudantium?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur culpa saepe obcaecati tempore distinctio, minima sunt laboriosam quam voluptatibus voluptatum. Nostrum nesciunt porro eum distinctio neque ex ipsum totam asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptate ab ea saepe ratione pariatur corporis distinctio! Doloremque laboriosam sit vero autem consectetur deserunt dolorem eligendi in voluptate. Tempora, dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor reiciendis suscipit quibusdam quo quisquam vitae? Earum quia voluptatum, quis animi quae ut praesentium accusantium perferendis voluptatem iure facere cupiditate. Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi deserunt cumque nobis ipsum ad esse! Voluptates in nostrum illo, architecto sapiente culpa? Tempore aperiam amet quibusdam dolor iste quo distinctio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, molestiae nemo dolorum nulla consequatur ad eius at, nihil in reiciendis eum dicta eligendi atque? Vel commodi nesciunt accusantium quas laudantium?</p>
+
 </body>
 </html>
